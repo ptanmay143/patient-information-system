@@ -155,8 +155,7 @@ class InsertWindow:
             "December",
         ]
         self.yearList = list(range(1900, 2020))
-        self.bloodGroupList = ["A+", "A-", "B+",
-                               "B-", "O+", "O-", "AB+", "AB-"]
+        self.bloodGroupList = ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"]
 
         # Labels
         tkinter.Label(self.window, text="Patient ID", width=25).grid(
@@ -168,12 +167,9 @@ class InsertWindow:
         tkinter.Label(self.window, text="Last Name", width=25).grid(
             pady=5, column=1, row=3
         )
-        tkinter.Label(self.window, text="D.O.B", width=25).grid(
-            pady=5, column=1, row=4)
-        tkinter.Label(self.window, text="M.O.B", width=25).grid(
-            pady=5, column=1, row=5)
-        tkinter.Label(self.window, text="Y.O.B", width=25).grid(
-            pady=5, column=1, row=6)
+        tkinter.Label(self.window, text="D.O.B", width=25).grid(pady=5, column=1, row=4)
+        tkinter.Label(self.window, text="M.O.B", width=25).grid(pady=5, column=1, row=5)
+        tkinter.Label(self.window, text="Y.O.B", width=25).grid(pady=5, column=1, row=6)
         tkinter.Label(self.window, text="Gender", width=25).grid(
             pady=5, column=1, row=7
         )
@@ -198,19 +194,14 @@ class InsertWindow:
 
         # Fields
         # Entry widgets
-        self.idEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.id)
-        self.fNameEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.fName)
-        self.lNameEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.lName)
+        self.idEntry = tkinter.Entry(self.window, width=25, textvariable=self.id)
+        self.fNameEntry = tkinter.Entry(self.window, width=25, textvariable=self.fName)
+        self.lNameEntry = tkinter.Entry(self.window, width=25, textvariable=self.lName)
         self.addressEntry = tkinter.Entry(
             self.window, width=25, textvariable=self.address
         )
-        self.phoneEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.phone)
-        self.emailEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.email)
+        self.phoneEntry = tkinter.Entry(self.window, width=25, textvariable=self.phone)
+        self.emailEntry = tkinter.Entry(self.window, width=25, textvariable=self.email)
         self.historyEntry = tkinter.Entry(
             self.window, width=25, textvariable=self.history
         )
@@ -228,12 +219,9 @@ class InsertWindow:
         self.doctorEntry.grid(pady=5, column=3, row=13)
 
         # Combobox widgets
-        self.dobBox = tkinter.ttk.Combobox(
-            self.window, values=self.dateList, width=20)
-        self.mobBox = tkinter.ttk.Combobox(
-            self.window, values=self.monthList, width=20)
-        self.yobBox = tkinter.ttk.Combobox(
-            self.window, values=self.yearList, width=20)
+        self.dobBox = tkinter.ttk.Combobox(self.window, values=self.dateList, width=20)
+        self.mobBox = tkinter.ttk.Combobox(self.window, values=self.monthList, width=20)
+        self.yobBox = tkinter.ttk.Combobox(self.window, values=self.yearList, width=20)
         self.genderBox = tkinter.ttk.Combobox(
             self.window, values=self.genderList, width=20
         )
@@ -344,27 +332,22 @@ class UpdateWindow:
             "December",
         ]
         self.yearList = list(range(1900, 2020))
-        self.bloodGroupList = ["A+", "A-", "B+",
-                               "B-", "O+", "O-", "AB+", "AB-"]
+        self.bloodGroupList = ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"]
 
         # Labels
         tkinter.Label(self.window, text="Patient ID", width=25).grid(
             pady=5, column=1, row=1
         )
-        tkinter.Label(self.window, text=id, width=25).grid(
-            pady=5, column=3, row=1)
+        tkinter.Label(self.window, text=id, width=25).grid(pady=5, column=3, row=1)
         tkinter.Label(self.window, text="First Name", width=25).grid(
             pady=5, column=1, row=2
         )
         tkinter.Label(self.window, text="Last Name", width=25).grid(
             pady=5, column=1, row=3
         )
-        tkinter.Label(self.window, text="D.O.B", width=25).grid(
-            pady=5, column=1, row=4)
-        tkinter.Label(self.window, text="M.O.B", width=25).grid(
-            pady=5, column=1, row=5)
-        tkinter.Label(self.window, text="Y.O.B", width=25).grid(
-            pady=5, column=1, row=6)
+        tkinter.Label(self.window, text="D.O.B", width=25).grid(pady=5, column=1, row=4)
+        tkinter.Label(self.window, text="M.O.B", width=25).grid(pady=5, column=1, row=5)
+        tkinter.Label(self.window, text="Y.O.B", width=25).grid(pady=5, column=1, row=6)
         tkinter.Label(self.window, text="Gender", width=25).grid(
             pady=5, column=1, row=7
         )
@@ -430,17 +413,13 @@ class UpdateWindow:
 
         # Fields
         # Entry widgets
-        self.fNameEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.fName)
-        self.lNameEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.lName)
+        self.fNameEntry = tkinter.Entry(self.window, width=25, textvariable=self.fName)
+        self.lNameEntry = tkinter.Entry(self.window, width=25, textvariable=self.lName)
         self.addressEntry = tkinter.Entry(
             self.window, width=25, textvariable=self.address
         )
-        self.phoneEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.phone)
-        self.emailEntry = tkinter.Entry(
-            self.window, width=25, textvariable=self.email)
+        self.phoneEntry = tkinter.Entry(self.window, width=25, textvariable=self.phone)
+        self.emailEntry = tkinter.Entry(self.window, width=25, textvariable=self.email)
         self.historyEntry = tkinter.Entry(
             self.window, width=25, textvariable=self.history
         )
@@ -457,12 +436,9 @@ class UpdateWindow:
         self.doctorEntry.grid(pady=5, column=3, row=13)
 
         # Combobox widgets
-        self.dobBox = tkinter.ttk.Combobox(
-            self.window, values=self.dateList, width=20)
-        self.mobBox = tkinter.ttk.Combobox(
-            self.window, values=self.monthList, width=20)
-        self.yobBox = tkinter.ttk.Combobox(
-            self.window, values=self.yearList, width=20)
+        self.dobBox = tkinter.ttk.Combobox(self.window, values=self.dateList, width=20)
+        self.mobBox = tkinter.ttk.Combobox(self.window, values=self.monthList, width=20)
+        self.yobBox = tkinter.ttk.Combobox(self.window, values=self.yearList, width=20)
         self.genderBox = tkinter.ttk.Combobox(
             self.window, values=self.genderList, width=20
         )
@@ -679,8 +655,7 @@ class HomePage:
         ).grid(pady=20, row=1)
 
         # Entry widgets
-        self.idEntry = tkinter.Entry(
-            self.updateIDWindow, width=5, textvariable=self.id)
+        self.idEntry = tkinter.Entry(self.updateIDWindow, width=5, textvariable=self.id)
 
         self.idEntry.grid(pady=10, row=2)
 
