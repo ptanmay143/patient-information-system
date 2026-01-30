@@ -33,7 +33,13 @@ The application opens with six operation buttons:
 2. Fill in patient details (ID, name, DOB, contact info, medical history)
 3. Click **Insert** to save
 
-All fields are validated on insert: patient ID must be 3 digits, names must be alphabetic, phone must be 10 digits, email must contain @ and period.
+All fields are validated on insert:
+- Patient ID: exactly 3 digits
+- First/Last Name: alphabetic only (no spaces or numbers)
+- Phone: exactly 10 digits
+- Email: must contain @ and at least one period
+- Medical History: alphabetic only (no spaces, numbers, or special characters)
+- Doctor Name: alphabetic only (no spaces or numbers)
 
 **Updating Records:**
 
@@ -62,11 +68,14 @@ Click **Display** to see all patient records in a table.
 
 This is a GUI application without a programmatic API. All interaction is through the Tkinter interface.
 
-The database layer uses three classes:
+The code is organized into these classes:
 
 - `Database` - SQLite connection and CRUD operations
-- `Values` - Input validation for insert operations
-- Window classes (`InsertWindow`, `UpdateWindow`, etc.) - GUI components
+- `Values` - Input validation (used only for insert operations)
+- `InsertWindow` - GUI for creating new records
+- `UpdateWindow` - GUI for editing existing records  
+- `SearchDeleteWindow` - GUI for search and delete operations
+- `DatabaseView` - Display window showing all records in table format
 
 Patient records include: ID, first/last name, date of birth, gender, address, phone, email, blood group, medical history, and assigned doctor.
 
@@ -74,8 +83,9 @@ Patient records include: ID, first/last name, date of birth, gender, address, ph
 
 - **No update validation** - Update operation bypasses all field validation
 - **No delete confirmation** - Records deleted immediately without warning
-- **Duplicate IDs allowed** - Database has no PRIMARY KEY constraint
+- **Duplicate IDs possible** - Database schema has typo ("PRIMARYKEY" as one word instead of "PRIMARY KEY"), so IDs are not actually unique
 - **Text-only storage** - All fields stored as TEXT type in SQLite
+- **Strict validation** - Insert requires alphabetic-only fields for names/history/doctor (no spaces allowed, which prevents entries like "Dr. Smith" or "diabetes type 2")
 - **Single-file monolith** - Entire app in one 700+ line file
 - **No error handling** - Database errors fail silently
 
