@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Patient Information System logo">
+  <defs>
+    <linearGradient id="surface" x1="32" y1="28" x2="224" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="96" y1="128" x2="160" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(68 60) rotate(42) scale(102 88)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#surface)"/>
+  <circle cx="68" cy="60" r="88" fill="url(#glow)"/>
+  <g opacity="0.18">
+    <rect x="82" y="64" width="116" height="140" rx="30" fill="#ffffff"/>
+    <rect x="72" y="54" width="116" height="140" rx="30" fill="#ffffff"/>
+  </g>
+  <rect x="62" y="44" width="132" height="168" rx="32" fill="#ffffff"/>
+  <rect x="106" y="30" width="44" height="18" rx="9" fill="#bfdbfe"/>
+  <rect x="82" y="72" width="92" height="112" rx="24" fill="#eff6ff"/>
+  <circle cx="170" cy="82" r="8" fill="#22d3ee"/>
+  <rect x="110" y="90" width="36" height="12" rx="6" fill="#1d4ed8"/>
+  <rect x="122" y="78" width="12" height="36" rx="6" fill="#1d4ed8"/>
+  <rect x="96" y="128" width="64" height="10" rx="5" fill="url(#accent)"/>
+  <rect x="96" y="146" width="52" height="10" rx="5" fill="#7dd3fc"/>
+  <rect x="96" y="164" width="40" height="10" rx="5" fill="#bae6fd"/>
+</svg>
